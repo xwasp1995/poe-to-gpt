@@ -111,4 +111,4 @@ async def websocket_endpoint(websocket: WebSocket):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=config.get('gateway-port', 5100))
+    uvicorn.run(app, host="0.0.0.0", port=config.get('gateway-port', 8080))
