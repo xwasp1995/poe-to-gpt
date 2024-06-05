@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python external/api.py & go build && chmod +x poe-openai-proxy && ./poe-openai-proxy && hypercorn main:app --bind \"[::]:$PORT\""
+    "startCommand": "python external/api.py & go build && chmod +x poe-openai-proxy && ./poe-openai-proxy && hypercorn main:app --bind 5100"
   }
 }
